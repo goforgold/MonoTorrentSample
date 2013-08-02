@@ -126,6 +126,7 @@ namespace Samples
 
             // Disable rarest first and randomised picking - only allow priority based picking (i.e. selective downloading)
             PiecePicker picker = new StandardPicker();
+
             picker = new PriorityPicker(picker);
             manager.ChangePicker(picker);
         }
